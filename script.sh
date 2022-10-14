@@ -1,6 +1,8 @@
 #!/bin/sh
 
 cd "$GITHUB_WORKSPACE"
+git config --global url."https://$ORG_GITHUB_TOKEN@github.com/12traits".insteadOf "https://github.com/12traits"
+
 #
 # Run the tool
 #

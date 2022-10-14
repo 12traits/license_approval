@@ -8,11 +8,16 @@ inputs:
     description: 'Which package manager to check (comma separated)'
     required: true
     default: 'bundler'
+  gh-token:
+    description: 'Github secret to access private repository'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
   - ${{ inputs.package_manager }}
+  env:
+    ORG_GITHUB_TOKEN: ${{ inputs.gh-token }}
 branding:
   icon: 'file-text'  
   color: 'purple'
