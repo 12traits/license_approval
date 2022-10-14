@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    license_finder (5.10.2)
+    license_finder (7.0.1)
       bundler
       rubyzip
       thor
